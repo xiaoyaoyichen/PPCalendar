@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="PPCalendar"></dbname>
+    <version value="1"/>
+
+    <list>
+        <mapping class="com.example.mycalendar.db.UserInfo"/>
+    </list>
+
+    <litepal>
+        <dbname value="MemoDB"></dbname>
+        <version value="1"></version>
+        <list>
+            <mapping class="com.example.mycalendar.Schedule.Memo"></mapping>
+        </list>
+    </litepal>
+</litepal>

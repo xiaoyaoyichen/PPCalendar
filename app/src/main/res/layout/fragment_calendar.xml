@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mycalendar.CalendarFragment"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
+
+    <com.example.mycalendar.calendar.CustomCalendar
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:mCurrentBg="#6E6E6E"
+        app:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+        app:mCurrentBgStrokeWidth="1.5dip"
+
+        app:mLineSpac="12dip"
+        app:mMonthRowL="@drawable/custom_calendar_row_left"
+        app:mMonthRowR="@drawable/custom_calendar_row_right"
+        app:mMonthRowSpac="20dip"
+
+        app:mMonthSpac="10dip"
+        app:mSelectBg="#fe7f5c"
+        app:mSelectRadius="15dip"
+        app:mSelectTextColor="#ffffff"
+        app:mSelectWeekTextColor="#f67633"
+        app:mTextColorDay="#686768"
+        app:mTextColorMonth="#4b4b4b"
+        app:mTextColorPreFinish="#fc7451"
+
+        app:mTextColorPreNull="#cecdcd"
+        app:mTextColorPreUnFinish="#69af8c"
+        app:mTextColorWeek="#9e9e9d"
+        app:mTextSizeDay="17sp"
+        app:mTextSizeMonth="20sp"
+        app:mTextSizePre="10sp"
+        app:mTextSizeWeek="17sp"
+        app:mTextSpac="8dip" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="10"
+        android:padding="5dp">
+
+    </ListView>
+
+
+    <!-- <CalendarView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>-->
+
+
+</LinearLayout>
+
+

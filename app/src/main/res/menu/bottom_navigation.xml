@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_calendar"
+        android:icon="@drawable/ic_bottom_calendar"
+        android:title="@string/calendar" />
+
+    <item
+        android:id="@+id/bottom_schedule"
+        android:icon="@drawable/ic_bottom_schedule"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/bottom_course"
+        android:icon="@drawable/ic_bottom_course"
+        android:title="@string/course" />
+
+    <item
+        android:id="@+id/bottom_setting"
+        android:icon="@drawable/ic_bottom_setting"
+        android:title="@string/setting" />
+
+</menu>
